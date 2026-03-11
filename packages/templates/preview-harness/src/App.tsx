@@ -169,8 +169,7 @@ function ComponentRenderer({ model, modelUpdate, width, height }: RendererProps)
         placeholder="Type something…"
       />
       <p style={{ margin: 0, fontSize: 11, color: '#9ca3af' }}>
-        Replace <code>ComponentRenderer</code> in{' '}
-        <code>packages/templates/preview-harness/src/App.tsx</code> with your component.
+        Replace <code>ComponentRenderer</code> in this file (<code>src/App.tsx</code>) with your actual component import.
       </p>
     </div>
   );
