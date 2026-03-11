@@ -1,0 +1,1 @@
+{\n  "name": "vibe-custom-components",\n  "private": true,\n  "workspaces": [\n    "apps/*"\n  ]\n}
