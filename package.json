@@ -1,1 +1,15 @@
-{\n  "name": "vibe-custom-components",\n  "private": true,\n  "workspaces": [\n    "apps/*"\n  ]\n}
+{
+  "name": "vibe-custom-components",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently --kill-others-on-fail \"npm run dev --workspace=apps/runner\" \"npm run dev --workspace=apps/web\"",
+    "build": "npm run build --workspace=apps/runner && npm run build --workspace=apps/web"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
